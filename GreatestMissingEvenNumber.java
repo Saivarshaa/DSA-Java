@@ -9,7 +9,7 @@ Missing: 8
 Output: 8
 
 Constraints:
-Sorted ascending, all even numbers.
+Sorted ascending
 Length: 1 <= n <= 10^5
 Value range: 0 <= arr[i] <= 10^9*/
 
