@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class NextGreaterNumber {
+public class NextGreaterPermutation {
     public static void reverse(int[] nums,int start , int end){
         int i=start,j=end;
         while(i<j){
