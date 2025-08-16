@@ -1,19 +1,32 @@
 import java.util.Scanner;
 
 public class ValidPalindrome {
+    public static boolean isValidPlaindrome(String s){
+        if(s==null){
+            return true;
+        }
+        int i =0 , j=s.length()-1;
+        while(i<j){
+            if(!Character.isLetterOrDigit(s.charAt(i))){
+                i++;
+                continue;
+            }
+            if(!Character.isLetterOrDigit(s.charAt(j))){
+                j--;
+                continue;
+            }
+            if(Character.toLowerCase(s.charAt(i))!=Character.toLowerCase(s.charAt(j))){
+                return false;
+            }
+            i++;j--;
+        }
+        return true;
+    }
       public static void main(String[] args) {
         //valid Palindrome
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a string to check");
         String s = sc.nextLine();
-        int i=0,j=s.length()-1;
-        while (i<j){
-            if(s.charAt(i++)!=s.charAt(j--)){
-                System.out.println(s+" is not a palindrome");
-                return ;
-                
-            }
-        }
-        System.out.println(s+" is a Palindrome");
+        System.out.println(isValidPlaindrome(s)?"valid palindrome":"Not a valid palindrome");
     }
 }
