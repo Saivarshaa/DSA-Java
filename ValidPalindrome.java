@@ -1,7 +1,7 @@
 import java.util.Scanner;
 
 public class ValidPalindrome {
-    public static boolean isValidPlaindrome(String s){
+    public static boolean isValidPalindrome(String s){
         if(s==null){
             return true;
         }
@@ -23,10 +23,9 @@ public class ValidPalindrome {
         return true;
     }
       public static void main(String[] args) {
-        //valid Palindrome
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter a string to check");
         String s = sc.nextLine();
-        System.out.println(isValidPlaindrome(s)?"valid palindrome":"Not a valid palindrome");
+        System.out.println(isValidPalindrome(s)?"Valid palindrome":"Not a valid palindrome");
     }
 }
