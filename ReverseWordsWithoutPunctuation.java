@@ -26,7 +26,7 @@ public class ReverseWordsWithoutPunctuation {
         int j =0;
         for(int i=0;i<s.length();){
             if(Character.isLetterOrDigit(s.charAt(i))){
-                sb.append(words.get(j));
+                sb.append(words.get(j++));
                 while(i<s.length() && Character.isLetterOrDigit(s.charAt(i))){
                     i++;
                 }
